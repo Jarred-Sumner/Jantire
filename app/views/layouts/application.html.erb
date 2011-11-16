@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jantire</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="top">
+      <a href="/"><img id="logo" src="http://i.imgur.com/xaB8V.png"/></a>
+      <ul id="navmenu">
+         <li><a href="/assignments">Homework</a></li>
+         <li><a href="/grades">Grades</a></li>
+         <li><a href="/courses">Courses</a></li>
+      </ul>
+      <div id="user_account">
+      <% unless user_signed_in? %>
+        <a href="/users/sign_in" id="sign_in">Sign In</a>
+      <% else %>
+        <a href="/users/sign_out" id="sign_out">Sign Out</a>
+      <% end %>
+      </div>
+    </div>
+    <%- flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+    <%- end -%>
+    <%= yield %>
+    <div id="lacking_humility">Created by Jarred Sumner</div>
+  </body>
+</html>

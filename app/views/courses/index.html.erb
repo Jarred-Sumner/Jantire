@@ -1,0 +1,26 @@
+<%= javascript_include_tag "courses" %>
+<div id="index">
+  <h2 class="title">Showing all Courses</h2>
+  <div id="courses">
+    <% @courses.each do |course| %>
+      <% if course.teacher? %>
+        <% if @courses.index(course).odd? %>
+          <div href="/courses/<%= course.id %>" class="course" id="<%= @courses.index(course) %>">
+            <div class="name"><%= course.name %></div>
+            <div class="teacher">Taught by <%= course.teacher.full_name %></div>
+            <div class="students"><%= course.students.count %> students in this class</div> 
+          </div>
+        <% else %>
+          <div href="/courses/<%= course.id %>/" class="course even" id="<%= @courses.index(course) %>">
+            <div class="name"><%= course.name %></div>
+            <div class="teacher">Taught by <%= course.teacher.full_name %></div>
+            <div class="students"><%= course.students.count %> student(s) in this class</div> 
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+  <% if current_user.teacher? %>
+    <a href="/courses/new" id="create_course">Create Course</a>
+  <% end %>
+</div>

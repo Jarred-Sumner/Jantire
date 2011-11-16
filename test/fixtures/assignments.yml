@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Sample Assignment Due Tomorrow
+  instructions: Do a barrel roll
+  due: <%= Date.tomorrow %>
+  score: 10.0
+  course_id: 1
+two:
+  name: Sample Assignment Already Due
+  instructions: Barrel roll complete
+  due: <%= Date.yesterday %>
+  score: 10.0
+  course_id: 1

@@ -1,0 +1,1347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"assignments"
+			],
+			[
+				"text",
+				"text: text-transform: none"
+			],
+			[
+				"hash",
+				"hash  (variable)"
+			],
+			[
+				"pathname",
+				"pathname  (variable)"
+			],
+			[
+				"inline",
+				"inline  (value)"
+			],
+			[
+				"none",
+				"none  (value)"
+			],
+			[
+				"grade",
+				"grade  (argument)"
+			],
+			[
+				"hover",
+				"hover  (pseudo-class)"
+			],
+			[
+				"inlne",
+				"inline  (value)"
+			],
+			[
+				"y",
+				"ruby  (element)"
+			],
+			[
+				"bold",
+				"bold  (value)"
+			],
+			[
+				"decoration",
+				"text-decoration:   (property)"
+			],
+			[
+				"solid",
+				"solid  (value)"
+			],
+			[
+				"margin",
+				"margin: margin: T R B L"
+			],
+			[
+				"ajax",
+				"ajax  (function)"
+			],
+			[
+				"aut",
+				"auto  (value)"
+			],
+			[
+				"Answer",
+				"Answer"
+			],
+			[
+				"answer",
+				"Answer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/assignments/egp.html.erb",
+			"settings":
+			{
+				"buffer_size": 1375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/grades_helper.rb",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/assignments.css.scss",
+			"settings":
+			{
+				"buffer_size": 11187,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/assignments/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 2883,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 349.0,
+		"selected_items":
+		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"csss",
+				"Convert Case: Swap Case"
+			],
+			[
+				"ss",
+				"Set Syntax: YAML"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"PACKAGE",
+				"Package Control: Discover Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"makefile",
+				"Set Syntax: Makefile"
+			],
+			[
+				"make",
+				"Set Syntax: Makefile"
+			],
+			[
+				"C",
+				"Set Syntax: C"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"Ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"html",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"loru",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"sass",
+				"Set Syntax: SASS"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"Slim",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"Coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Install P",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Discover",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Pcka",
+				"Package Control: List Packages"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set syntax json",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 214.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Programming/Jantire/app/views/assignments/new.html.erb",
+		"/D/Programming/Jantire/config/application.rb",
+		"/D/Programming/Jantire/config/environments/production.rb",
+		"/D/Programming/Jantire/app/assets/stylesheets/form.css.scss",
+		"/D/Programming/Jantire/app/views/grades/index.html.erb",
+		"/D/Programming/Jantire/app/views/courses/show.html.erb",
+		"/D/Programming/Jantire/app/controllers/grades_controller.rb",
+		"/D/Programming/Jantire/app/assets/stylesheets/grades.css.scss",
+		"/D/Programming/Jantire/config/routes.rb",
+		"/D/Programming/Jantire/app/controllers/assignments_controller.rb",
+		"/D/Programming/Jantire/Gemfile",
+		"/D/Programming/Jantire/app/assets/stylesheets/application.css",
+		"/D/Programming/Jantire/app/assets/javascripts/grade_assignment.js",
+		"/D/Programming/Jantire/app/assets/javascripts/egp.js",
+		"/D/Programming/Jantire/app/views/layouts/application.html.erb",
+		"/D/Programming/Jantire/app/views/grades/show.html.erb",
+		"/D/Programming/Jantire/lib/tasks/cucumber.rake",
+		"/D/Programming/Jantire/spec/acceptance/show_homework_to_turn_in_spec.rb",
+		"/D/Programming/Jantire/test/fixtures/assignments.yml",
+		"/D/Programming/Jantire/test/fixtures/courses.yml",
+		"/D/Programming/Jantire/test/unit/user_test.rb",
+		"/D/Programming/Jantire/app/views/assignments/index.html.erb",
+		"/D/Programming/Jantire/script/cucumber",
+		"/D/Programming/Jantire/features/support/env.rb",
+		"/D/Programming/Jantire/Rakefile",
+		"/C/Ruby193/lib/ruby/gems/1.9.1/gems/puffer-0.0.32/lib/puffer.rb",
+		"/D/Programming/Jantire/app/assets/stylesheets/courses.css.scss",
+		"/D/Programming/Jantire/Gemfile.lock",
+		"/D/Programming/Jantire/app/assets/stylesheets/assignments.css.scss",
+		"/D/Programming/Jantire/app/models/user.rb",
+		"/D/Programming/Jantire/app/views/courses/index.html.erb",
+		"/D/Programming/Jantire/app/models/ability.rb",
+		"/D/Programming/Jantire/app/models/course.rb",
+		"/D/Programming/Jantire/app/controllers/courses_controller.rb",
+		"/D/Programming/Jantire/app/views/courses/new.html.erb",
+		"/D/Programming/Jantire/app/views/courses/_form.html.erb",
+		"/D/Programming/Jantire/app/assets/javascripts/courses.js.coffee",
+		"/D/Programming/Jantire/app/assets/javascripts/form.js",
+		"/D/Programming/Jantire/app/views/grades/_form.html.erb",
+		"/D/Programming/Jantire/app/views/assignments/_form.html.erb",
+		"/D/Programming/Jantire/db/schema.rb",
+		"/D/Programming/Jantire/app/views/devise/registrations/new.html.erb",
+		"/D/Programming/Jantire/app/assets/javascripts/application.js",
+		"/D/Programming/Jantire/app/models/assignment.rb",
+		"/D/Programming/Jantire/db/migrate/20111104231132_create_courses_user.rb",
+		"/D/Programming/Jantire/db/migrate/20111104231808_remove_user_id_from_course_id.rb",
+		"/D/Programming/Jantire/db/migrate/20111104224840_create_courses.rb",
+		"/D/Programming/Jantire/db/migrate/20111104225249_add_course_id_to_user.rb",
+		"/D/Programming/Jantire/config.ru",
+		"/D/Programming/Jantire/app/views/assignments/grade.html.erb",
+		"/D/Programming/Jantire/config.yml",
+		"/D/Programming/Jantire/.bundle/config",
+		"/D/Programming/Jantire/config/database.yml",
+		"/D/Programming/Jantire/config_heroku",
+		"/D/Programming/blog/wordpress/wp-config-sample.php",
+		"/D/Programming/Jantire/app/views/assignments/turn_in.html.erb",
+		"/D/Programming/Jantire/app/assets/stylesheets/jquery-ui-1.8.16.custom.css",
+		"/D/Programming/Jantire/app/views/assignments/_grade.js.erb",
+		"/D/Programming/Jantire/app/views/assignments/egp.html.erb",
+		"/D/Programming/Jantire/config/s3.yml",
+		"/D/Programming/Jantire/app/models/grade.rb",
+		"/D/Programming/Jantire/app/assets/javascripts/grade_assignment.js.coffee",
+		"/D/Programming/blog/wordpress/postgresql-for-wordpress/readme.txt",
+		"/D/Programming/blog/wordpress/wp-content/db.php",
+		"/C/Users/Jarred Sumner/AppData/Local/Temp/scp33605/etc/nginx/conf/nginx.conf",
+		"/C/Users/Jarred Sumner/AppData/Local/Temp/scp51198/opt/nginx/conf/nginx.conf",
+		"/C/Users/Jarred Sumner/AppData/Local/Temp/scp36687/home/jantire/demo/config/unicorn.rb",
+		"/C/Users/Jarred Sumner/AppData/Local/Temp/scp59244/etc/nginx/conf/nginx.conf",
+		"/C/Users/Jarred Sumner/AppData/Local/Temp/scp09231/home/jantire/demo/config/unicorn.rb",
+		"/C/Users/Jarred Sumner/Desktop/jantire/Gemfile",
+		"/D/Multimedia/Builds/rubyinstaller/recipes/dependencies/ffi.rake",
+		"/D/Multimedia/Builds/rubyinstaller/recipes/dependencies/iconv.rake",
+		"/D/Multimedia/Builds/rubyinstaller/recipes/dependencies/rbreadline.rake",
+		"/D/Multimedia/Builds/rubyinstaller/recipes/dependencies/openssl.rake",
+		"/D/Multimedia/Builds/rubyinstaller/recipes/dependencies/zlib.rake",
+		"/D/Multimedia/Builds/rubyinstaller/recipes/dependencies/yaml.rake",
+		"/D/Multimedia/Builds/rubyinstaller/sandbox/src-libffi/msvcc.sh",
+		"/C/Users/Jarred Sumner/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/D/Programming/Jantire/app/helpers/assignments_helper.rb",
+		"/B/Programming/Jantire/app/views/grades/index.html.erb",
+		"/B/Programming/Jantire/app/assets/javascripts/grades.js",
+		"/B/Programming/Jantire/app/assets/javascripts/egp.js",
+		"/B/Programming/Jantire/app/assets/stylesheets/assignments.css.scss",
+		"/B/Programming/Jantire/app/views/assignments/egp.html.erb",
+		"/B/Programming/Jantire/app/assets/javascripts/application.js",
+		"/B/Programming/Jantire/Gemfile",
+		"/B/Programming/Jantire/db/migrate/20111021003557_add_first_name_and_last_name_to_user.rb",
+		"/B/Programming/Jantire/app/controllers/grades_controller.rb",
+		"/B/Programming/Jantire/app/controllers/assignments_controller.rb",
+		"/C/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/layout.erb",
+		"/C/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb",
+		"/B/Programming/Jantire/app/models/user.rb",
+		"/C/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb",
+		"/C/RailsInstaller/Ruby1.9.2/lib/ruby/gems/1.9.1/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb",
+		"/B/Programming/Jantire/app/assets/stylesheets/grades.css.scss",
+		"/B/Programming/Jantire/config/routes.rb",
+		"/B/Programming/Jantire/app/views/devise/registrations/new.html.erb",
+		"/B/Programming/Jantire/app/models/grade.rb",
+		"/B/Programming/Jantire/app/helpers/assignments_helper.rb",
+		"/B/Programming/Jantire/config/database.yml",
+		"/B/Programming/Jantire/config/environments/production.rb",
+		"/B/Programming/Jantire/app/assets/stylesheets/application.css",
+		"/B/Programming/Jantire/jantire.sublime-workspace",
+		"/B/Programming/Jantire/app/models/assignment.rb",
+		"/B/Programming/Jantire/app/views/assignments/index.html.erb",
+		"/B/Programming/Jantire/app/views/assignments/upcoming.html.erb",
+		"/B/Programming/Jantire/test/unit/assignment_test.rb",
+		"/B/Programming/Jantire/lib/tasks/cucumber.rake",
+		"/B/Programming/Jantire/config/cucumber.yml",
+		"/B/Programming/Jantire/Rakefile",
+		"/B/Programming/Jantire/doc/README_FOR_APP",
+		"/B/Programming/Jantire/README",
+		"/B/Multimedia/Builds/rubyinstaller/config/ruby_installer.rb",
+		"/C/Program Files (x86)/Microsoft Visual Studio 10.0/VC/bin/amd64/vcvars64.bat",
+		"/C/Program Files (x86)/Microsoft Visual Studio 10.0/VC/vcvarsall.bat",
+		"/B/Multimedia/Builds/rubyinstaller/README.txt",
+		"/B/Multimedia/Builds/rubyinstaller/config/compilers/mingw64.rb",
+		"/B/Multimedia/Builds/rubyinstaller/recipes/interpreter/ruby19.rake",
+		"/B/Programming/Jantire/app/views/layouts/application.html.erb",
+		"/B/Multimedia/Builds/ruby-1.9.3-rc1/win32/ext/readline/mkmf.log",
+		"/B/Multimedia/Builds/ruby-1.9.3-rc1/win32/ext/psych/mkmf.log",
+		"/B/Multimedia/Builds/libyaml-stable/include/yaml.h",
+		"/B/Multimedia/Builds/ruby-1.9.3-rc1/win32/rm.bat",
+		"/B/Multimedia/Builds/ruby-1.9.3-rc1/win32/ext/psych/Makefile",
+		"/B/Programming/Jantire/app/views/devise/sessions/new.html.erb",
+		"/B/Programming/Jantire/app/models/ability.rb",
+		"/B/Programming/Jantire/app/views/assignments/turn_in.html.erb",
+		"/B/Programming/Jantire/app/assets/javascripts/form.js"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"setDefaults",
+			"setDefautls",
+			"name",
+			"odd",
+			"styleToolbar",
+			"setGraded",
+			";/",
+			";",
+			"#custom_score",
+			"setDefaults",
+			"scoreHomework",
+			"nextanswer",
+			"nextAnswer()",
+			"NextGrade()",
+			"nextGrade()",
+			"next",
+			"nextU",
+			"nextUnGraded",
+			"nextUngraded",
+			"gradingComplete",
+			"grade.graded",
+			"setActiveToolbar",
+			"nextUngraded",
+			"setAnswerAsActive()",
+			"setActiveToolbar",
+			"setActiveToo",
+			"saveGrade",
+			"success",
+			":",
+			"saveGrade",
+			"currentGrade",
+			"currentGrade()",
+			"score",
+			"scoreHomeworkByPercent",
+			"grades[0].score)",
+			"grades[index]",
+			"grades[getActiveGrade()]",
+			"grades[index]",
+			"scoreHomework",
+			"scoreHomeworkByPercent",
+			"()",
+			"<%= @assignment.score.as_json %>",
+			"jarred",
+			"null",
+			"custom_score",
+			"gradingComplete",
+			"previous",
+			"next",
+			"teacher?",
+			"a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|#|/|1|2|3|4|5|6|7|8|9|0|\\.|@|\\{|\\}|\\[|\\]|",
+			"WIN32",
+			"dll",
+			"Puffer",
+			"asset",
+			">",
+			"destroy",
+			".clickable",
+			"<a hre",
+			"\">",
+			"d",
+			"D",
+			"d",
+			"D",
+			"current_action",
+			"current_controller",
+			"changeactiveAnswer()",
+			"setGraded",
+			"save",
+			"$(\"body\")",
+			"margin-bottom",
+			"$.ajax",
+			"alert",
+			"al",
+			"alert",
+			"nobody",
+			"margin-bottom",
+			"eu.news.astraweb.com",
+			"not_clickable",
+			"grades[index]",
+			"grades",
+			"[index]",
+			"#work",
+			"each",
+			"?",
+			"upload_to_scribd",
+			"border-radius",
+			"self",
+			"student",
+			"windows",
+			"answer",
+			"<!--",
+			"</script>",
+			"<script type=\"",
+			"questions",
+			"Andrew",
+			"Result \\d\\d",
+			"Result 15",
+			",",
+			"paperclip",
+			"@name",
+			"DocumentRoot",
+			"<directory>",
+			"ServerName",
+			"index.php",
+			"server",
+			"server 192",
+			"server",
+			"open_basedir",
+			"IfModule",
+			"TypesConfig conf/mime.types",
+			" Include conf/extra/php5_module.conf\n Include conf/extra/php5_module.conf\n",
+			"LoadModule dir_module modules/mod_dir.so",
+			"MIMEMagic",
+			" MIMEMagicFile conf/magic\n MIMEMagicFile conf/magic\n MIMEMagicFile conf/magic\nMIMEMagicFile conf/magic",
+			" MIMEMagicFile conf/magic\n MIMEMagicFile conf/magic\n",
+			"IfModule",
+			" TypesConfig conf/mime.types\n TypesConfig conf/mime.types\nTypesConfig",
+			"Include",
+			"mcrypt",
+			"listen",
+			"server",
+			"utc",
+			"Pry",
+			"1C1C1C",
+			"494949",
+			"homework",
+			"fu",
+			"problem"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"even",
+			"nextAnswer()",
+			"currentGrade()",
+			"currentGrade.assignment.score)",
+			"currentGrade",
+			"",
+			"grades[0].score",
+			"jantire",
+			"up",
+			"down",
+			"action_name",
+			"controller_name",
+			"$(window)",
+			"us.news.astraweb.com",
+			"clickable",
+			"grade",
+			"",
+			"grade",
+			"student_name",
+			"",
+			"answers",
+			"",
+			"4C4C4C",
+			"3D3D3D",
+			"assignment",
+			"question",
+			"assignment",
+			"question",
+			"assignment",
+			"question",
+			"assignment",
+			"question",
+			"Assignment",
+			"Question",
+			"",
+			"end",
+			"class=\"assignment empty\"",
+			"",
+			"class=\"name\"",
+			"class=\"done_online\"",
+			"class=\"due\"",
+			"",
+			">",
+			"class",
+			"grade",
+			"Yup",
+			"answer",
+			"question_number",
+			"question",
+			"problem_number",
+			"current_element",
+			"current_problem",
+			"problem_DOM",
+			"Jantire",
+			"/home/helveticus/jarredsumner.com/blog",
+			"projects_nav",
+			"[start_index]",
+			"start_index",
+			"[operator_index]",
+			"expression",
+			"unprocessed_equation",
+			"",
+			"binomial",
+			"get_multiplication_binomial",
+			"get_subtraction_trinomial",
+			"get_addition_trinomial",
+			"get_division_trinomial",
+			"get_multiplication_trinomial",
+			"get_subtraction",
+			"get_addition",
+			"get_divison",
+			"get_multiplication",
+			"get_parentheses",
+			"\\s",
+			"get_parentheses",
+			"\\s",
+			"assignment_2",
+			"assignment.",
+			"=",
+			"/assets/",
+			"15"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/assignments/egp.html.erb",
+					"settings":
+					{
+						"buffer_size": 1375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								942,
+								942
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/helpers/grades_helper.rb",
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/stylesheets/assignments.css.scss",
+					"settings":
+					{
+						"buffer_size": 11187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9194,
+								9194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9541.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "app/views/assignments/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 2883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								675,
+								675
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"production.rb",
+				"config/environments/production.rb"
+			],
+			[
+				"application.rb",
+				"config/application.rb"
+			],
+			[
+				"new",
+				"app/views/assignments/new.html.erb"
+			],
+			[
+				"form.css.",
+				"app/assets/stylesheets/form.css.scss"
+			],
+			[
+				"index",
+				"app/views/assignments/index.html.erb"
+			],
+			[
+				"assignments.css",
+				"app/assets/stylesheets/assignments.css.scss"
+			],
+			[
+				"grades.css.",
+				"app/assets/stylesheets/grades.css.scss"
+			],
+			[
+				"routes.rb",
+				"config/routes.rb"
+			],
+			[
+				"show",
+				"app/views/courses/show.html.erb"
+			],
+			[
+				"route.rb",
+				"config/routes.rb"
+			],
+			[
+				"grades",
+				"app/controllers/grades_controller.rb"
+			],
+			[
+				"assig",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"grades_helper",
+				"app/helpers/grades_helper.rb"
+			],
+			[
+				"egp.html.erb",
+				"app/views/assignments/egp.html.erb"
+			],
+			[
+				"egp.js",
+				"app/assets/javascripts/egp.js"
+			],
+			[
+				"grades.css.scs",
+				"app/assets/stylesheets/grades.css.scss"
+			],
+			[
+				"show.",
+				"app/views/grades/show.html.erb"
+			],
+			[
+				"grade.js",
+				"app/assets/javascripts/grade_assignment.js"
+			],
+			[
+				"application",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"layout.",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"course",
+				"test/fixtures/courses.yml"
+			],
+			[
+				"assignments.yml",
+				"test/fixtures/assignments.yml"
+			],
+			[
+				"show_home",
+				"spec/acceptance/show_homework_to_turn_in_spec.rb"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"cucumber",
+				"script/cucumber"
+			],
+			[
+				"courses.css",
+				"app/assets/stylesheets/courses.css.scss"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			],
+			[
+				"assignments",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"form",
+				"app/assets/stylesheets/form.css.scss"
+			],
+			[
+				"abilityrb",
+				"app/models/ability.rb"
+			],
+			[
+				"course.rb",
+				"app/models/course.rb"
+			],
+			[
+				"courses",
+				"app/controllers/courses_controller.rb"
+			],
+			[
+				"_fomr",
+				"app/views/grades/_form.html.erb"
+			],
+			[
+				"_form",
+				"app/views/assignments/_form.html.erb"
+			],
+			[
+				"form.js",
+				"app/assets/javascripts/form.js"
+			],
+			[
+				"courses_controller",
+				"app/controllers/courses_controller.rb"
+			],
+			[
+				"courses.css.scss",
+				"app/assets/stylesheets/courses.css.scss"
+			],
+			[
+				"form.css",
+				"app/assets/stylesheets/form.css.scss"
+			],
+			[
+				"form.css.scs",
+				"app/assets/stylesheets/form.css.scss"
+			],
+			[
+				"course.js.coffee",
+				"app/assets/javascripts/courses.js.coffee"
+			],
+			[
+				"grades_controller",
+				"app/controllers/grades_controller.rb"
+			],
+			[
+				"show.html.erb",
+				"app/views/courses/show.html.erb"
+			],
+			[
+				"courses.css.scs",
+				"app/assets/stylesheets/courses.css.scss"
+			],
+			[
+				"courses.js",
+				"app/assets/javascripts/courses.js.coffee"
+			],
+			[
+				"schema.rb",
+				"db/schema.rb"
+			],
+			[
+				"application.js",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"assign",
+				"app/models/assignment.rb"
+			],
+			[
+				"form.css.css",
+				"app/assets/stylesheets/form.css.scss"
+			],
+			[
+				"application.css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"course.css.scs",
+				"app/assets/stylesheets/courses.css.scss"
+			],
+			[
+				"remove",
+				"db/migrate/20111104231808_remove_user_id_from_course_id.rb"
+			],
+			[
+				"inde",
+				"app/views/courses/index.html.erb"
+			],
+			[
+				"ability",
+				"app/models/ability.rb"
+			],
+			[
+				"assignment",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"create",
+				"db/migrate/20111104224840_create_courses.rb"
+			],
+			[
+				"create_courses",
+				"db/migrate/20111104231132_create_courses_user.rb"
+			],
+			[
+				"add_use",
+				"db/migrate/20111104225249_add_course_id_to_user.rb"
+			],
+			[
+				"assignment.rb",
+				"app/models/assignment.rb"
+			],
+			[
+				"produ",
+				"config/environments/production.rb"
+			],
+			[
+				"assignme",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"gemfile.lock",
+				"Gemfile.lock"
+			],
+			[
+				"config_heroku",
+				"config_heroku"
+			],
+			[
+				"turn_in",
+				"app/views/assignments/turn_in.html.erb"
+			],
+			[
+				"new.html",
+				"app/views/devise/registrations/new.html.erb"
+			],
+			[
+				"assignments.css.scs",
+				"app/assets/stylesheets/assignments.css.scss"
+			],
+			[
+				"assignments.css.css",
+				"app/assets/stylesheets/assignments.css.scss"
+			],
+			[
+				"assignments.css.scss",
+				"app/assets/stylesheets/assignments.css.scss"
+			],
+			[
+				"grade_assignment",
+				"app/assets/javascripts/grade_assignment.js"
+			],
+			[
+				"grade.html.erb",
+				"app/views/assignments/grade.html.erb"
+			],
+			[
+				"grade.js.erb",
+				"app/views/assignments/_grade.js.erb"
+			],
+			[
+				"grade.rb",
+				"app/models/grade.rb"
+			],
+			[
+				"s3.yml",
+				"config/s3.yml"
+			],
+			[
+				"grade",
+				"app/models/grade.rb"
+			],
+			[
+				"database.yml",
+				"config/database.yml"
+			],
+			[
+				"_grade.js.erb",
+				"app/views/assignments/_grade.js.erb"
+			],
+			[
+				"_grade",
+				"app/views/assignments/_grade.js.erb"
+			],
+			[
+				"grade_as",
+				"app/assets/javascripts/grade_assignment.js.coffee"
+			],
+			[
+				"grade.js.coffe",
+				"app/assets/javascripts/grade_assignment.js.coffee"
+			],
+			[
+				"show.html",
+				"app/views/grades/show.html.erb"
+			],
+			[
+				"assignment.",
+				"app/models/assignment.rb"
+			],
+			[
+				"helper",
+				"app/helpers/assignments_helper.rb"
+			],
+			[
+				"assignments_controller",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"assignmen",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"grades.css.scss",
+				"Jantire/app/assets/stylesheets/grades.css.scss"
+			],
+			[
+				"grades.js",
+				"Jantire/app/assets/javascripts/grades.js"
+			],
+			[
+				"add",
+				"db/migrate/20111021003557_add_first_name_and_last_name_to_user.rb"
+			],
+			[
+				"",
+				"app/assets/stylesheets/assignments.css.scss"
+			],
+			[
+				"grades_controler",
+				"app/controllers/grades_controller.rb"
+			],
+			[
+				"database",
+				"config/database.yml"
+			],
+			[
+				"assignments_helper",
+				"app/helpers/assignments_helper.rb"
+			],
+			[
+				"ass",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"upcoming",
+				"app/views/assignments/upcoming.html.erb"
+			],
+			[
+				"assignments_c",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"cucu",
+				"lib/tasks/cucumber.rake"
+			],
+			[
+				"assignment_",
+				"test/unit/assignment_test.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"rakefile",
+				"Rakefile"
+			],
+			[
+				"datab",
+				"config/database.yml"
+			],
+			[
+				"readme",
+				"doc/README_FOR_APP"
+			],
+			[
+				"application.html.erb",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"index.html",
+				"app/views/assignments/index.html.erb"
+			],
+			[
+				"environment.rb",
+				"config/environment.rb"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"config.ru",
+				"config.ru"
+			],
+			[
+				"assignm",
+				"app/controllers/assignments_controller.rb"
+			],
+			[
+				"manifest",
+				"public/assets/manifest.yml"
+			],
+			[
+				"show.js",
+				"app/assets/javascripts/show.js"
+			],
+			[
+				"turn_in.html.erb",
+				"app/views/assignments/turn_in.html.erb"
+			],
+			[
+				"index.html.erb",
+				"app/views/grades/index.html.erb"
+			],
+			[
+				"abil",
+				"app/models/ability.rb"
+			],
+			[
+				"turned_in",
+				"app/views/assignments/turned_in.html.erb"
+			],
+			[
+				"turned",
+				"app/views/assignments/turned_in.html.erb"
+			],
+			[
+				"turn",
+				"app/views/assignments/turn_in.html.erb"
+			],
+			[
+				"devise.rb",
+				"config/initializers/devise.rb"
+			],
+			[
+				"new.h",
+				"app/views/devise/registrations/new.html.erb"
+			],
+			[
+				"devis",
+				"config/initializers/devise.rb"
+			],
+			[
+				"destr",
+				"db/migrate/20111010014524_destroy_users.rb"
+			],
+			[
+				"destroy",
+				"db/migrate/20111009230417_destroy_user.rb"
+			],
+			[
+				"sessions.css.scss",
+				"app/assets/stylesheets/sessions.css.scss"
+			],
+			[
+				"session",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"users_controller",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"new.html.erb",
+				"app/views/sessions/new.html.erb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"users.js.coffee",
+				"app/assets/javascripts/users.js.coffee"
+			],
+			[
+				"users.css.scss",
+				"app/assets/stylesheets/users.css.scss"
+			],
+			[
+				"sessio",
+				"app/controllers/sessions_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/B/Programming/Jantire/jantire.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

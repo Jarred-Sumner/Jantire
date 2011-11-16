@@ -1,0 +1,12 @@
+<%= javascript_include_tag "form" %>
+<div class="devise" id="sign_up">
+  <h1>Sign up for Jantire</h2>
+  <%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+    <%= f.inputs :first_name, :last_name, :email, :password, :password_confirmation %>
+    <%= f.input :courses %>
+    <div id="shift_click">(Shift-Click to select multiple courses)</div>
+    <%= f.submit :id =>"submit" %>
+  <% end %>
+</div>
+

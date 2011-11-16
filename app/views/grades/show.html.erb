@@ -1,0 +1,40 @@
+<%= javascript_include_tag "show" %>
+  <div class="show">
+    <div id="work">
+      <div id="grading_who"><div id="current_student"><%= @grade.user.full_name %></div>'s homework</div>
+      <div id="scribd">
+
+      </div>
+      <div id="toolbar">
+        <% if current_user.teacher %>
+          <div id="note" class="clickable" title="Notes"><%= image_tag "notepad.png" %></div>
+          <div id="none" class="clickable" title="No Credit"><%= image_tag "minus.png" %></div>
+          <div id="half" class="clickable" title="Half Credit">✓</div>
+          <div id="full" class="clickable" title="Full Credit" ><%= image_tag "plus.png" %></div>
+          <h3 id="custom_score" class="clickable" title="Manually set a score"><%= image_tag "gear.png" %></h3>
+        <% else %>
+          <div id="note" class="clickable" title="Notes"><%= image_tag "notepad.png" %></div>
+          <div id="none" title="No Credit"><%= image_tag "minus.png" %></div>
+          <div id="half" title="Half Credit">✓</div>
+          <div id="full" title="Full Credit" ><%= image_tag "plus.png" %></div>
+       <% end %>
+       </div>
+    </div>  
+    <div id="status">
+      Score: <div id="note"><%= status @grade %></div>
+      <% unless note(@grade) == "No Notes Given" %>
+        <div id="separator"> - </div>
+        <div id="why"><%= note(@grade) %></div>
+      <% end %>
+    </div>
+    <div id="note_container" title="Notes">
+      <% unless current_user.teacher? %> 
+        <div class="student" id="notes">Notes: <%= note(@grade) %></div>
+      <% else %>
+        <textarea class="teacher" placeholder="Write your student a note about their homework" id="notes" val="Notes: <%= @grade.note %>"></textarea>
+      <% end %>
+    </div>
+    <div id="custom_score_popup" title="Set a score">
+      <div id="custom_score_popup_divider">Score: <input type="number" id="custom_score_input"></input> out of <%= @grade.assignment.score.to_i.to_s %></div>
+    </div>
+  </div>

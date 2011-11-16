@@ -1,0 +1,200 @@
+#index
+{  
+	margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  min-height: 500px;
+  min-width: 900px;
+  width: 60%;
+  background: #141414;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #141414;
+  text-align: center;
+  $even_background: #2F4A56;
+  $even_color: #88D7FC;
+  $course_background: #70572E;
+  $course_color: #FFD89B;
+	.title
+	{
+		text-align: center;
+	}
+	.course
+	{
+		margin: 0 auto;
+    margin-top: 22px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    background: $course_background;
+    color: $course_color;
+    border-radius: 15px;
+    margin-bottom: -20px;
+    .name
+    {
+      font-family: "Georgia", serif;
+      font-size: 16pt;
+      padding: 15px;
+      padding-top: 0px;
+    }
+    .teacher
+    {
+      text-align: left;
+      padding: 15px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      font-family: Georgia, serif;
+    	font-size: 11pt;
+    }
+    .students
+    {
+    	margin: 0 auto;
+    	padding: 15px;
+    	padding-top: 0px;
+    	text-align: left;
+    	font-family: "Georgia";
+    	font-size: 11pt;
+    }
+	}
+	.course:hover
+	{
+		cursor: pointer;
+		background: $course_color;
+		color: $course_background;
+	}
+  .course:active
+  {
+    box-shadow: 0px 0px 15px $course_color;
+  }
+	.even
+	{
+		background: $even_background;
+		color: $even_color;
+	}
+	.even:hover
+	{
+		background: $even_color;
+		color: $even_background;
+	}
+  .even:active
+  {
+    box-shadow: 0px 0px 15px $even_color;
+  }
+  #create_course
+  {
+   margin-top: 40px;
+   padding: 20px;
+   font-size: 20pt;
+   color: #CCCCCC;
+   font-family: Georgia; 
+   display: inline-block;
+   text-decoration: none;
+   border: solid 1px #CCCCCC;  
+   border-radius: 5px;
+  }
+  #create_course:hover
+  {
+    color: #141414;
+    background: white;
+  }
+  #create_course:active
+  {
+   box-shadow: 0px 0px 30px #CCCCCC;
+  }
+}
+#show
+{
+  margin: 0 auto;
+  padding: 0;
+  min-height: 500px;
+  min-width: 900px;
+  width: 60%;
+  background: #141414;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #141414;
+  text-align: center;
+  $even_background: #2F4A56;
+  $even_color: #88D7FC;
+  $student_background: #70572E;
+  $student_color: #FFD89B;
+  #title
+  {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 0;
+  }
+  .taught_by
+  {
+    margin: 0 auto;
+    font-family: Georgia;
+  }
+  #join_course, #leave_course
+  {
+   margin-top: 40px;
+   padding: 20px;
+   font-size: 20pt;
+   color: #CCCCCC;
+   font-family: Georgia; 
+   display: inline-block;
+   text-decoration: none;
+   border: solid 1px #CCCCCC;  
+   border-radius: 5px;
+  }
+  #join_course:hover, #leave_course:hover
+  {
+    color: #141414;
+    background: white;
+  }
+  #join_course:active, #leave_course:active
+  {
+   box-shadow: 0px 0px 30px #CCCCCC;
+  }
+  #students
+  {
+    margin-top: 15px;
+    .student
+    {
+      margin: 0 auto;
+      padding: 5px;
+      background: $student_background;
+      color: $student_color;
+      border-radius: 5px;
+    }
+    .student:hover
+    {
+      background: $student_color;
+      color: $student_background;
+      cursor: pointer;
+    }
+    .even
+    {
+      
+    }
+    .student:hover .no_hover:hover
+    {
+      background: $student_background;
+      color: $student_color;
+      cursor: default;
+    }
+    .even:hover .no_hover:hover
+    {
+      background: $even_background;
+      color: $even_color;
+      cursor: default;
+    }
+  }
+}
+#new
+{
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0;
+  width: 60%;
+  text-align: center;
+  background: #141414;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #141414;
+  #course_name
+  {
+    text-align: left;
+  }
+}

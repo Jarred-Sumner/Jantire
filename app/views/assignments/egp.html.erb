@@ -1,0 +1,35 @@
+<%= javascript_include_tag "egp" %>
+<div id="egp">
+<div id="grades_egp">
+    <% @grades.each do |grade| %>
+      <% if @grades.index(grade) % 2 != 0 %>
+        <div class="grade" id="<%= @grades.index(grade) %>">
+          <div id="last_name"><%= grade.user.last_name %></div>
+          <div class="separator">,</div>
+          <div id="first_name"><%= grade.user.first_name %></div>
+          <div class="separator"> - </div>
+          <div id="score"><%= grade.score.to_s %></div>
+          <div class="separator">/</div>
+          <div id="max_score"><%= @assignment.score.to_s %></div>
+        </div>
+      <% else %>
+        <div class="grade odd" id="<%= @grades.index(grade) %>">
+          <div id="last_name"><%= grade.user.last_name %></div>
+          <div class="separator">,</div>
+          <div id="first_name"><%= grade.user.first_name %></div>
+          <div class="separator"> - </div>
+          <div id="score"><%= egp_score(grade) %></div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div id="header">
+    <h2 id="title">EasyGrade Pro Mode for <%= @assignment.name %></h2>
+    <h4 id="subtitle">(Use the next and previous buttons to highlight a grade)</h4>
+    <button id="previous">Previous Grade</button>
+    <button id="next">Next Grade</button>
+  </div>
+  <div title="No More Grades to Enter" id="complete">
+    Are you done here?
+  </div>
+</div>

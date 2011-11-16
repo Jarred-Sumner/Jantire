@@ -1,0 +1,65 @@
+<%= javascript_include_tag "grades" %>
+<div id="grades">
+ <% if @assignment && current_user.teacher? %> 
+    <% if @grades.empty? %>
+      <h2 class="title">Grades for <%= @assignment.name %></h2>
+      <h1 class="title">Nobody's turned anything in on Jantire yet</h1>
+    <% else %>
+      <a id="egp">Add to Easy Grade Pro</a>
+      <h2 class="title egp_title">Grades for <%= @assignment.name %></h2>
+
+    <% end %>
+    <% @grades.each do |grade| %>
+      <% if @grades.index(grade) % 2 == 0 %>
+        <div href="/grades/<%= grade.id%>/" class="grade">
+          <div class="student_name"><%= grade.user.first_name + " " + grade.user.last_name  %> - </div>
+          <div class="score"><%= status(grade) %></div>
+        </div> 
+      <% else %>
+        <div href="/grades/<%= grade.id%>/" class="grade odd">
+          <div class="student_name"><%= grade.user.first_name + " " + grade.user.last_name %> -</div>
+          <div class="score"><%= status(grade) %></div>
+        </div> 
+      <% end %>
+    <% end %>
+  <% elsif @assignments && current_user.teacher? %>
+    <h2 class="title">View Grades by Assignment</h2>
+    <% unless @assignments.empty? %>
+      <% @assignments.each do |assignment| %>
+        <% if @assignments.index(assignment) % 2 == 0 %>
+          <div href="/assignments/<%= assignment.id %>/grades/" class="assignment">
+            <div class="assignment_name"><%= assignment.name %></div>
+          </div> 
+        <% else %>
+          <div href="/assignments/<%= assignment.id %>/grades" class="assignment odd">
+            <div class="assignment_name"><%= assignment.name %></div>
+          </div>
+        <% end %>
+      <% end %>
+    <% else %>
+      <h1 id="no_homework">There aren't any assignments on Jantire yet.</h1>
+    <% end %>
+  <% else %>
+    <h2 class="title">Grades for <%= @user.full_name %></h2>
+      <% unless @user.grades.empty? %>
+        <% @user.grades.each do |grade| %>
+          <% if @user.grades.index(grade) % 2 == 0 %>
+            <div href="/grades/<%= grade.id %>/" class="grade">
+              <div class="student_name"><%= grade.assignment.name %> - </div>
+              <div class="score"><%= status(grade) %></div>
+            </div> 
+          <% else %>
+            <div href="/grades/<%= grade.id %>/" class="grade odd">
+              <div class="student_name"><%= grade.assignment.name %> - </div>
+              <div class="score"><%= status(grade) %></div>
+            </div> 
+          <% end %>
+        <% end %>
+        <% if !@user.teacher && @user.grades.size < @user.assignments.size %>
+          <h2>Assignments not shown weren't turned in with Jantire.</h2>
+        <% end %>
+      <% else %>
+       <h2>Your teacher hasn't started using Jantire yet, or you haven't done any homework with it. Either way, come back later and you won't be treated with just a shiny black rectangle.</h2>
+      <% end %>
+  <% end %>
+</div>

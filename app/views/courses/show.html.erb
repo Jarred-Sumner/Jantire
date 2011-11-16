@@ -1,0 +1,25 @@
+<%= javascript_include_tag "courses" %>
+<div id="show">
+	<h2 id="title"><%= @course.name %></h2>
+	<h4 class="taught_by">Taught by <%= @course.teacher.full_name %></h4>
+	<div id="students">
+		<% if current_user.teacher? %>
+			<% @course.students.each do |student| %>
+			  <% if @course.students.index(student).even? %>
+					<div id="<%= student.id %>" href="/user/<%= student.id %>/grades" class="student even">
+						<div class="name"><%= student.full_name %></div>
+					</div>
+				<% else %>
+					<div id="<%= student.id %>" href="/user/<%= student.id %>/grades" class="student">
+						<div class="name"><%= student.full_name %></div>
+					</div>
+				<% end %>
+			<% end %>
+		<% end %>
+		<% if @course.users.where(:id => current_user.id).empty? %>
+			<a id="join_course" href="/courses/<%= @course.id%>/join">Join Course</a>
+		<% else %>
+			<a id="leave_course" href="/courses/<%= @course.id%>/leave">Leave Course</a>
+		<% end %>
+	</div>
+</div>

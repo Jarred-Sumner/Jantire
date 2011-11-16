@@ -1,0 +1,9 @@
+<%= javascript_include_tag "form" %>
+<%= semantic_form_for @assignment do |f| %>
+  <%= f.input :name, :placeholder => "Make it recognizable" %>
+  <%= f.input :instructions, :placeholder => "Be slightly more detailed than with the name" %>
+  <%= f.input :course %>
+  <%= f.input :due, :as => :string %>
+  <%= f.input :score, :label => "Max Score" %>
+  <%= f.buttons %>
+<% end %>

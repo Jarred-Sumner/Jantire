@@ -1,0 +1,29 @@
+<%= javascript_include_tag "assignments" %>
+<div id="assignments">
+  <% if @assignments.empty? %>
+    <h1>There isn't any homework on Jantire anytime soon.</h1>
+  <% else %>
+    <h2 id="title">Upcoming Homework (Isn't ready for grading)</h2>
+    <% @assignments.each do |assignment| %>
+      <% if @assignments.index(assignment) % 2 != 0 %>
+        <div href="/assignments/<%= assignment.id %>/grade" class="assignment">
+          <%= link_to "X", "/assignments/#{assignment.id}", :method => :delete, :id => assignment.id, :class => "destroy", :confirm => "Are you sure you want to do this? It's going to suck trying to get this back if you change your mind later" %>
+          <%= link_to "Edit", "/assignments/#{assignment.id}/edit", :method => :get, :class => "edit" %>
+          <h3 class="name"><%= assignment.name %></h3>
+          <% if assignment.turned_in_at_all? > 0 %>
+            <div class="turned_in_count">
+          <% end %>
+          <div class="due">Due On: <%= assignment.due %></div>
+        </div>
+      <% else %>
+        <div href="/assignments/<%= assignment.id %>/grade" class="assignment odd">
+          <%= link_to "X", "/assignments/#{assignment.id}", :method => :delete, :id => assignment.id, :class => "destroy", :confirm => "Are you sure you want to do this? It's going to suck trying to get this back if you change your mind later" %>
+          <%= link_to "Edit", "/assignments/#{assignment.id}/edit", :method => :get, :class => "edit" %>
+          <h3 class="name"><%= assignment.name %></h3>
+          <div class="due">Due On: <%= assignment.due %></div>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+  <a href="/assignments/new" id="create_homework">Create Homework</a>
+</div>

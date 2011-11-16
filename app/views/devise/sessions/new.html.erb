@@ -1,0 +1,14 @@
+<%= javascript_include_tag "form" %>
+<div class="devise">
+  <h1>Sign In</h1>
+
+  <%= semantic_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <%= f.inputs :email, :password %>
+    <%= f.submit "Sign In", :id => "submit" %>
+    <% if devise_mapping.rememberable? -%>
+      <%= f.input :remember_me, :as => :boolean %>
+    <% end -%>
+  <% end %>
+
+  <%= render :partial => "devise/shared/links" %>
+</div>

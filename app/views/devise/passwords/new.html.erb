@@ -1,0 +1,12 @@
+<%= javascript_include_tag "form" %>
+<div class="devise">
+  <h1>Forgot your password?</h1>
+
+  <%= semantic_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+    <%= devise_error_messages! %>
+    <%= f.input :email %>
+    <%= f.submit "Send me reset password instructions", :id => "submit" %>
+  <% end %>
+
+  <%= render :partial => "devise/shared/links" %>
+</div>

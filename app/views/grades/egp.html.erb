@@ -1,0 +1,22 @@
+<div id="egp">
+  <h2 id="title">Showing the grades of <%= @assignment.name %></h2>
+  <% @grades.each do |grade| %>
+    <% if @grades.index(grade) % 2 != 0 %>
+      <div class="grade" id="<%= grade.id %>">
+        <div id="last_name"><%= grade.user.last_name %></div>
+        <div class="separator">,</div>
+        <div id="first_name"><%= grade.user.first_name %></div>
+        <div class="separator"> - </div>
+        <div id="score"><%= grade.score.to_s %></div>
+      </div>
+    <% else %>
+      <div class="grade odd" id="<%= grade.id %>">
+        <div id="last_name"><%= grade.user.last_name %></div>
+        <div class="separator">,</div>
+        <div id="first_name"><%= grade.user.first_name %></div>
+        <div class="separator"> - </div>
+        <div id="score"><%= grade.score.to_s %></div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

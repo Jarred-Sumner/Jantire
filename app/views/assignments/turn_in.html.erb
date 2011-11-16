@@ -1,0 +1,25 @@
+<%= javascript_include_tag "assignments" %>
+<p id="notice"><%= notice %></p>
+<div class="turn_in">
+  <h2 id="title">Assignment Name: <%= @assignment.name %></h2>
+  <div id="directions_container">
+    <h3>Directions - <div id="directions"><%= @assignment.instructions %></div> </h3>
+
+
+    <div class="turn_in_container">
+    <div class="turn_in_box " id="turn_in_box">
+        <div id="label">
+          <h4 id="turn_in_assignment">Turn In Assignment</h4>
+          <h6 id="drag">(You can just drag it in here)</h6>
+        </div>
+      </div>
+  <%= semantic_form_for @grade, :html => { :multipart => true, :id => "form"} do |f| %>
+    <%= f.file_field :answer, :id => "file" %>
+    <%= f.input :graded, :as => :hidden, :selected => false %>
+    <%= f.input :assignment_id, :as => :hidden, :selected => params[:assignment_id] %>
+    <%= f.input :user_id, :as => :hidden, :selected => current_user.id %>
+    <%= f.submit :id => "submit" %>
+  <% end %>
+
+    </div>
+</div>

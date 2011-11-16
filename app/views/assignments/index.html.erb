@@ -1,0 +1,60 @@
+<!-- Fuck you asset pipeline! -->
+<%= javascript_include_tag "assignments" %>
+<div id="assignments">
+  <% unless current_user.teacher? %>
+    <% if @assignments.empty? %>
+      <h2 id="title">Upcoming Homework</h2>
+      <h1>Woo, no homework!</h1>
+    <% else %>
+      <h2 id="title">Upcoming Homework</h2>
+      <% @assignments.each do |assignment| %>
+        <% if @assignments.index(assignment).even? %>
+          <div href="/assignments/<%= assignment.id %>/turn_in" class="assignment">
+            <h3 class="name"><%= assignment.name %></h3>
+            <div class="due">Due On: <%= assignment.due %></div>
+          </div>
+        <% else %>
+          <div href="/assignments/<%= assignment.id %>/turn_in" class="assignment odd">
+            <h3 class="name"><%= assignment.name %></h3>
+            <div class="due">Due On: <%= assignment.due %></div>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <h2 id="title">Homework to Grade</h2>
+    <% if @assignments.empty? %>
+      <div id="info">
+        <h1 id="nothing">There's nothing to grade. </h1>
+        <% if next_due(current_user) %>
+          <a href="<%= next_due_link(current_user) %>" id="next_due">Check back on <%= next_due(current_user) %></a>
+        <% else %>
+          <div id="no_assignments">You should create some homework</div>
+        <% end %>
+      </div>
+    <% else %>
+      <% @assignments.each do |assignment| %>
+        <% if @assignments.index(assignment).even? %>
+          <div href="/assignments/<%= assignment.id %>/grade" class="assignment">
+            <div class="settings">
+              <%= link_to "Edit", "/assignments/#{assignment.id}/edit", :method => :get, :class => "edit" %>
+               <%= link_to "X", "/assignments/#{assignment.id}", :method => :delete, :id => assignment.id, :class =>"destroy", :confirm => "Are you sure you want to do this? It's going to suck trying to get this back if you change your mind later" %>
+            </div>
+            <h3 class="name"><%= assignment.name %></h3>
+            <div class="due">Due On: <%= assignment.due %></div>
+          </div>
+        <% else %>
+          <div href="/assignments/<%= assignment.id %>/grade" class="assignment odd">
+            <div class="settings">
+              <%= link_to "Edit", "/assignments/#{assignment.id}/edit", :method => :get, :class => "edit" %>
+               <%= link_to "X", "/assignments/#{assignment.id}", :method => :delete, :id => assignment.id, :class =>"destroy", :confirm => "Are you sure you want to do this? It's going to suck trying to get this back if you change your mind later" %>
+            </div>
+            <h3 class="name"><%= assignment.name %></h3>
+            <div class="due">Due On: <%= assignment.due %></div>
+          </div>
+        <% end %> 
+      <% end %>
+    <% end %>
+    <a href="/assignments/new" id="create_homework">Create Homework</a>
+  <% end %>
+</div>

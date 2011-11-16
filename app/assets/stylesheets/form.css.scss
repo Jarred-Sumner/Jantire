@@ -1,0 +1,46 @@
+#new_assignment, .formtastic
+{
+  margin: 0 auto;
+  padding: 15px;
+  list-style: none !important;
+  .inputs, .required
+  {
+    label
+    {
+      font-family: Georgia, serif !important;
+      font-size: 16pt !important;
+      color: white !important;
+    }
+    input
+    {
+      max-width: 50% !important;
+    }
+    #user_course_ids
+    {
+      width: 390px !important;
+      text-align: center;
+      font-family: Georgia !important;
+    }
+    #assignment_name
+    {
+      max-width: 300px !important;
+      text-align: left;
+    }
+    #assignment_score
+    {
+      width: 47px !important;
+      text-align: left;  
+    }
+    #assignment_due
+    {
+      width: 90px !important; 
+      text-align: left;
+    }
+  }
+  #shift_click
+  {
+    margin-top: -20px;
+    margin-left: 190px;
+    margin-bottom: 25px;
+  }
+}

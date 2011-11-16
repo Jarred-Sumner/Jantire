@@ -1,0 +1,1 @@
+((function(){$("#index").ready(function(){return $(".course").click(function(){return window.location.pathname=$(this).attr("href")}),$(".student").click(function(){if(!$(this).hasClass("no_hover"))return window.location.pathname=$(this).attr("href")})})})).call(this)

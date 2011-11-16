@@ -1,0 +1,300 @@
+#grades
+{
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0;
+  text-align: center;
+  width: 60%;
+  min-height: 600px;
+  background: #141414;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #141414;
+  $odd_background: #2F4A56;
+  $odd_color: #88D7FC;
+  $grade_background: #70572E;
+  $grade_color: #FFD89B;
+  .egp_title
+  {
+    margin-left: 260px;
+  }
+  #egp
+  {
+    margin: 0 auto;
+    padding: 10px;
+    float: right;
+    font-family: Georgia, serif;
+    font-size: 13pt;
+    text-decoration: none;
+    width: 175px;
+    border-radius: 15px;
+  }
+  #egp:hover
+  {
+    text-decoration: underline;
+    cursor: pointer;  
+  }
+  .grade, .assignment, .user
+  {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Georgia;
+    font-size: 18px;
+    background: $grade_background;
+    color: $grade_color;
+    border-radius: 5px;
+    .student_name, .score, .assignment_name
+    {
+      margin: 0 auto;
+      padding: 0;
+      display: inline-block;
+      font-family: Georgia;
+      font-size: 16pt;
+      text-align: center;
+    }
+    .student_name
+    {
+      text-align: left;
+    }
+    .score
+    {
+      text-align: right;
+    }
+  }
+  .odd
+  {
+    background: $odd_background;
+    color: $odd_color;
+  }
+  .grade:hover, .assignment:hover, .user:hover
+  {
+    background: $grade_color;
+    color: $grade_background;
+    cursor: pointer;
+  }
+  .grade:active, .assignment:active, .user:active
+  {
+    box-shadow: 0px 0px 20px $grade_color;
+  }
+  .odd:hover
+  {
+    background: $odd_color;
+    color: $odd_background;
+    cursor: pointer;
+  }
+  .odd:active
+  {
+    box-shadow: 0px 0px 20px $odd_color;
+  }
+
+}
+.show
+{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  #work
+  {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    #grading_who
+    {
+      margin: 0 auto;
+      padding: 0;
+      font-family: Georgia, serif;
+      font-size: 18pt;
+      width: 900px;
+      background: #171717;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      text-align: center;
+      box-shadow: 0px 0px 10px #171717;
+      #current_student
+      {
+        display: inline-block;
+      }
+    }
+    #scribd
+    {
+      margin: 0 auto;
+      padding: 0;
+      width: 900px;
+      box-shadow: 0px 0px 10px #171717;
+    }
+    #toolbar
+    {
+      margin: 0 auto;
+      padding: 0;
+      background: #171717;
+      width: 900px;
+      margin-top: -25px;
+      height: 80px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      box-shadow: 0px 0px 10px #171717;
+      div
+      {
+        margin-top: 20px;
+        margin-left: 30px;
+        display: inline-block;
+        font-size: 38pt;
+        color: #BAB600;
+      }
+      img
+      {
+        width: 35px;
+        height: 35px;
+      }
+      .clickable:hover
+      {
+        cursor: pointer;
+      }
+      #note
+      {
+        margin-top: 26px;
+        float: left;
+        img
+        {
+          width: 45px;
+          height: 45px;
+        }
+      }
+      #note:hover
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #F5F2B4;
+          cursor: pointer;
+        }
+      }
+      #none
+      {
+        margin-left: -65px;
+      }
+      #custom_score
+      {
+        padding: 5px;
+        float: right;
+        position: relative;
+        bottom: 2px;
+        left: -30px;
+        font-family: Georgia;
+        font-size: 20pt;
+        color: #E3E3E3;
+        height: 45px;
+        width: 45px;
+        img
+        {
+          height: 45px;
+          width: 45px;
+        }
+      }
+      #custom_score:hover
+      {
+        img
+        {
+          cursor: pointer;
+          box-shadow: 0px 0px 5px #d1dbe5;
+        }
+      }
+      .custom_active
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #d1dbe5;
+        }
+      }
+      .note_active
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #F5F2B4;
+          cursor: pointer;
+        }
+      }
+      .none_active
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #A90000;
+          cursor: pointer;
+        }
+      }
+      .half_active 
+      {
+        box-shadow: 0px 0px 5px #BAB600;
+      }
+      .full_active
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #9DD20D;
+        }
+      }
+      .none_active:hover
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #A90000;
+        }
+      }
+      .half_active:hover
+      {
+        box-shadow: 0px 0px 5px #BAB600;
+      }
+      .full_active:hover
+      {
+        img
+        {
+          box-shadow: 0px 0px 5px #9DD20D;
+        }
+      }
+    }
+  }
+  #status
+  {
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 15px;
+    font-family: Georgia, serif;
+    font-size: 18pt;
+    background: #141414;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #171717;
+    max-width: 50%;
+    div
+    {
+      display: inline-block;
+    }
+    #why
+    {
+      text-decoration: underline;
+    }
+    #why:hover
+    {
+      cursor: pointer;
+    }
+  }
+  #note_container
+  {
+    display: none;
+    overflow: none;
+    #notes
+    {
+      width: 400px
+    }
+  }
+  #custom_score_popup
+  {
+    margin: 0 auto;
+    padding: 0;
+    display: none;
+    #custom_score_divider
+    {
+      text-align: center;
+    }
+  }
+}

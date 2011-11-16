@@ -1,0 +1,1 @@
+$("#grades").ready(function(){function a(a){window.location.pathname=$(a).attr("href")}$("#egp").click(function(){window.open("/assignments/"+location.pathname.split("/")[2]+" /egp")}),$(".grade").click(function(){a(this)}),$(".user").click(function(){a(this)}),$(".assignment").click(function(){a(this)})})

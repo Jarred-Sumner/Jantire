@@ -1,0 +1,263 @@
+grades = null;
+$(document).ready(function()
+{
+  setupPage();
+  $(window).hashchange(function()
+  {
+    changeActiveAnswer();
+  });
+  $(window).resize(function()
+  {
+    setMaxHeight();
+  })
+  $(".answer").click(function()
+  {
+    location.hash = $(this).attr("id");
+  });
+  $("#full").click(function()
+  {
+    scoreHomeworkByPercent(1);
+  });
+  $("#half").click(function()
+  {
+    scoreHomeworkByPercent(0.5);
+  });
+  $("#none").click(function()
+  {
+    scoreHomeworkByPercent(0);
+  });
+  $("#note").click(function()
+  {
+    addNote();
+  });
+  $("#custom_score_input").change()
+  {
+    scoreHomework();
+  }
+  
+});
+function setupPage()
+  {
+    setGrades();
+    if (grades != null)
+    {
+      setGradedAsGraded();
+      setMaxHeight();
+      changeActiveAnswer();
+    }
+    else
+    {
+      alert("No Homeworks to grade!");
+    }
+  }
+function setGradedAsGraded()
+{
+  for (index in grades)
+  {
+    if (currentGrade.graded)
+    {
+      $("#" + index).addClass("graded");
+    }
+  }
+}
+function setGrades()
+{
+  $.ajax
+  ({
+    type: "GET",
+    async: false,
+    url: window.location.pathname + "s.json",
+    success: function(data)
+    {
+      grades = data;
+    }
+  });
+} 
+function setMaxHeight()
+{
+  if (navigator.appName != 'Microsoft Internet Explorer')
+  {
+    $("#answer_container").css("min-height", $(window).height() - 62);
+    $("#scribd").children("embed").attr('height', $(window).height() * 0.75); 
+  }
+  else
+  {
+    $("#answer_container").css("min-height", $(window).height() - 65);
+    $("body").css("overflow", "visible");
+  }
+}
+function changeActiveAnswer()
+{
+  setAnswerAsActive();
+  getHomework();
+}
+function setAnswerAsActive()
+{
+  //Sets the answer as active, if no hash is given it defaults to the first ungraded items
+  if (location.hash == "")
+  {
+    location.hash = nextUnGraded();
+  }
+  //This just changes the stylesheet - versus changing the content of #work
+  if ($(".active").attr("class").indexOf("graded") >= 0)
+  {
+    $(".active").css("opacity", "0.4");
+  }
+  $(".active").removeClass("active");
+  $(location.hash).addClass("active");
+  if ($(location.hash).attr("class").indexOf("graded"))
+  {
+    $(location.hash).css("opacity", "1");
+  }
+  $("#current_student").text($(".active").children(".student_name").text());
+  if (!isNaN(currentGrade.score))
+  {
+    $("#")
+  }
+}
+function getHomework()
+{
+  //Sets up the homework for Scribd
+  var current_grade = grades[parseInt($(location.hash).attr("id"))];
+  scribd_document = scribd.Document.getDoc(current_grade.document_id, current_grade.document_access_key);
+  scribd_document.addParam('jsapi_version', 1);
+  scribd_document.addParam('hide_disabled_buttons', true);
+  scribd_document.write('scribd');
+  //There's a weird bug relating to the height of this element. This is a workaround
+  setMaxHeight();
+  setActiveToolbar(location.hash);
+}
+function scoreHomework()
+{
+  var index = getActiveGrade();
+  currentGrade.score = parseInt($("#custom_score_input").val());
+  currentGrade.graded = true;
+  saveGrade(currentGrade);
+  $(".active").addClass("graded");
+  if (nextUnGraded() != null)
+  {
+    location.hash = nextUnGraded();
+  }
+  else if (nextUnGraded() == null)
+  {
+    setActiveToolbar(location.hash);
+    gradingComplete();
+  }
+}
+function scoreHomeworkByPercent(percent)
+{
+  parseInt($("#custom_score").val(grades[0].assignment.score * percent));
+}
+function nextUnGraded()
+{
+  //Gets the next answer that hasn't been graded
+  for (index in grades)
+  {
+    if (currentGrade.graded == false || currentGrade.graded == null)
+    {
+      return "#" + index;
+    }
+  }
+  if (location.hash == "")
+  {
+    return "#0";
+  }
+  return null;
+}
+function setActiveToolbar(hash)
+{
+  resetToolbarItems();
+  var index = hash.split("#")[1];
+  if (currentGrade.graded)
+  {
+    if (currentGrade.score * 2 == grades[0].score)
+    {
+      $("#half").addClass("half_active");
+    }
+    else if (currentGrade.score == grades[0].score)
+    {
+      $("#full").addClass("full_active");
+    }
+    else if (currentGrade.score == 0 || currentGrade.score == null)
+    {
+      $("#none").addClass("none_active");
+    }
+  }
+}
+function resetToolbarItems()
+{
+  $("#none").removeClass("none_active");
+  $("#half").removeClass("half_active");
+  $("#full").removeClass("full_active");
+}
+function saveGrade(grade)
+{        
+  if (!isNaN(grade.score) || grade.score == null && grade.graded)
+  {
+    $.ajax
+    ({
+      type: "PUT",
+      url: "/grades/" + grade.id,
+      data: { grade: { score: grade.score, graded: true, note: grade.note } }
+    });
+  }
+}
+function addNote()
+{
+  var index = window.location.hash.split("#")[1];
+  $("#notes_text").css("width", "400px");
+  $("#notes_text").css("font-size", "12pt");
+  $("#notes_text").css("float", "center");
+  $("#notes_text").css("resize", "none");
+  if (currentGrade.note != undefined || currentGrade.note == "" || currentGrade.note == "null" || currentGrade == null)
+  {
+    $("#notes_text").val(currentGrade.note);
+  }
+  $("#notes").dialog(
+  {
+    width: 'auto',
+    buttons:
+    {
+      "Add Note": function()
+      {
+        currentGrade.note = $("#notes_text").val();
+        saveGrade(currentGrade);
+        $("#notes_text").val("");
+        $(this).dialog("close");
+      },
+      "Cancel": function()
+      {
+        $("#notes_text").val("");
+        $(this).dialog("close");
+      }
+    }
+  });
+}
+function gradingComplete()
+{
+  $("#grading_complete").dialog(
+    {
+      buttons:
+      {
+        "I'm Done": function()
+        {
+          window.location.pathname = window.location.pathname + "s/";
+        },
+        "Not Yet": function()
+        {
+          $(this).dialog("close");
+        }
+      }
+    }
+  );
+  $("#grading_complete").children("p").css("color", "black");
+  $("#grading_complete").children("p").css("font-size", "12pt");
+}
+function getActiveGrade()
+{
+  return parseInt($(location.hash).attr("id"));
+}
+function currentGrade()
+{
+  return grades[location.hash.split("#")[1]];
+}

@@ -1,0 +1,7 @@
+<div id="edit">
+  <h1>Editing <%= @assignment.name %></h1>
+  <% unless @assignment.grades.empty? %>
+  	<h3><a id="grade_early" href="/assignments/<%= @assignment.id %>/grade">Start Grading Early</a></h3>
+  <% end %>
+  <%= render 'form' %>
+</div>

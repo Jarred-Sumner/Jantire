@@ -1,0 +1,2 @@
+DATABASE_URL        => postgres://kjywvzxlst:cF__ezLI2fkTTxNQcjdw@ec2-107-22-213-155.compute-1.amazonaws.com/kjywvzxlst
+SHARED_DATABASE_URL => postgres://kjywvzxlst:cF__ezLI2fkTTxNQcjdw@ec2-107-22-213-155.compute-1.amazonaws.com/kjywvzxlst
