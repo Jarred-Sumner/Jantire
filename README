@@ -1,5 +1,3 @@
-== Jantire
-
 Jantire was a digital turn-in box for homework that's graded on completion.
 
 I'm not working on it anymore.
@@ -7,3 +5,12 @@ I'm not working on it anymore.
 Feel free to do whatever you want with it.
 
 Beware, I didn't write any tests and there are several UX issues.
+
+How to get it working:
+	1. Register for an account at Scribd with an API key (http://www.scribd.com/developers).
+	2. Place the login information and API key in Rails.root/config/initializers/rscribd.rb
+	3. If you have an S3 account and buckets set them up in config/s3.yml
+
+By default all accounts are student accounts. 
+Teacher accounts are instances of the User model with the 'teacher' attribute set to true.
+
